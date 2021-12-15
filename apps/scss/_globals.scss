@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: hsl(299, 25%, 60%);
+}
+.wrapper{
+    width: 25rem;
+    border-radius: 0.4375rem;
+    background: white;
+
+    header{
+        color: hsl(299, 25%, 60%);
+        font-size: 1.3125rem;
+        font-weight: 500;
+        padding: 1rem 0.9375rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+
+        i{
+            cursor: pointer;
+            font-size: 1.875rem;
+            margin-right: 0.5rem;
+        }
+
+    }
+    .user-input{
+        margin: 1.25rem 1.5625rem 1.875rem;
+
+        .info-txt{
+            display: none;
+            font-size: 1.0625rem;
+            text-align: center;
+            padding: 0.75rem 0.625rem;
+            border-radius: 0.4375rem;
+            margin-bottom: 0.9375rem;
+        }
+
+        .error{
+            display: block;
+            color: hsl(9, 96%, 31%);
+            background: hsl(9, 100%, 85%);
+            border: 1px solid hsl(9, 100%, 90%);
+        }
+
+        .pending{
+            display: block;
+            color: hsl(224, 80%, 27%);
+            background: hsl(229, 100%, 90%);
+            border: 1px solid hsl(243, 100%, 93%);
+        }
+
+        :where(input, button){
+            width: 100%;
+            height: 3.4375rem;
+            border: none;
+            outline: none;
+            font-size: 1.125rem;
+            border-radius: 0.4375rem;
+        }
+
+        input{
+            text-align: center;
+            border: 1px solid lightgray; 
+        }
+
+        input:is(:focus, :valid){
+            border: 2px solid hsl(199, 100%, 57%);
+        }
+
+        .seperator{
+            height: 1px;
+            width: 100%;
+            margin: 1.5625rem 0;
+            background: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .seperator::before{
+            content: "or";
+            color: #ccc;
+            font-size: 1.1875rem;
+            padding: 0 0.9375rem;
+            background: white;
+        }
+
+        button{
+            color: white;
+            cursor: pointer;
+            background: hsl(299, 25%, 60%);
+        }
+    }
+}

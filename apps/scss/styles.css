@@ -1,1 +1,124 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #b280b3;
+}
+
+.wrapper {
+  width: 25rem;
+  border-radius: 0.4375rem;
+  background: white;
+}
+
+.wrapper header {
+  color: #b280b3;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  padding: 1rem 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.wrapper header i {
+  cursor: pointer;
+  font-size: 1.875rem;
+  margin-right: 0.5rem;
+}
+
+.wrapper .user-input {
+  margin: 1.25rem 1.5625rem 1.875rem;
+}
+
+.wrapper .user-input .info-txt {
+  display: none;
+  font-size: 1.0625rem;
+  text-align: center;
+  padding: 0.75rem 0.625rem;
+  border-radius: 0.4375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.wrapper .user-input .error {
+  display: block;
+  color: #9b1a03;
+  background: #ffbeb3;
+  border: 1px solid #ffd4cc;
+}
+
+.wrapper .user-input .pending {
+  display: block;
+  color: #0e2b7c;
+  background: #ccd5ff;
+  border: 1px solid #dddbff;
+}
+
+.wrapper .user-input :where(input, button) {
+  width: 100%;
+  height: 3.4375rem;
+  border: none;
+  outline: none;
+  font-size: 1.125rem;
+  border-radius: 0.4375rem;
+}
+
+.wrapper .user-input input {
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.wrapper .user-input input:is(:focus, :valid) {
+  border: 2px solid #24baff;
+}
+
+.wrapper .user-input .seperator {
+  height: 1px;
+  width: 100%;
+  margin: 1.5625rem 0;
+  background: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .user-input .seperator::before {
+  content: "or";
+  color: #ccc;
+  font-size: 1.1875rem;
+  padding: 0 0.9375rem;
+  background: white;
+}
+
+.wrapper .user-input button {
+  color: white;
+  cursor: pointer;
+  background: #b280b3;
+}
+/*# sourceMappingURL=styles.css.map */
