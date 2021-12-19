@@ -38,7 +38,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 0.0625rem solid lightgray;
 }
 
 .wrapper header i {
@@ -65,14 +65,14 @@ body {
   display: block;
   color: #9b1a03;
   background: #ffbeb3;
-  border: 1px solid #ffd4cc;
+  border: 0.0625rem solid #ffd4cc;
 }
 
 .wrapper .user-input .pending {
   display: block;
   color: #0e2b7c;
   background: #ccd5ff;
-  border: 1px solid #dddbff;
+  border: 0.0625rem solid #dddbff;
 }
 
 .wrapper .user-input :where(input, button) {
@@ -86,7 +86,7 @@ body {
 
 .wrapper .user-input input {
   text-align: center;
-  border: 1px solid lightgray;
+  border: 0.0625rem solid lightgray;
 }
 
 .wrapper .user-input input:is(:focus, :valid) {
@@ -94,7 +94,7 @@ body {
 }
 
 .wrapper .user-input .seperator {
-  height: 1px;
+  height: 0.0625rem;
   width: 100%;
   margin: 1.5625rem 0;
   background: #ccc;
@@ -192,7 +192,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid #bfbfbf;
+  border-top: 0.0625rem solid #bfbfbf;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -203,6 +203,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0.9375rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -217,15 +218,23 @@ body {
 }
 
 .wrapper .weather-part .bottom-details .humidity {
-  border-left: 1px solid #bfbfbf;
+  border-left: 0.0625rem solid #bfbfbf;
 }
 
-.wrapper .weather-part .bottom-details .details .temp, .wrapper .weather-part .bottom-details .humidity span {
+.wrapper .weather-part .bottom-details .details .temp, .wrapper .weather-part .bottom-details .details .humidity span {
   font-size: 1.125rem;
   font-weight: 500;
+  margin-top: 0.1875rem;
 }
 
-.wrapper .weather-part .bottom-details .details .temp .degree, .wrapper .weather-part .bottom-details .humidity span .degree {
+.wrapper .weather-part .bottom-details .details .temp .degree {
   margin: 0;
+  font-size: 1.0625rem;
+  pad: 0 0.125rem 0 0.0625rem;
+}
+
+.wrapper .weather-part .bottom-details .details p {
+  font-size: 0.875rem;
+  margin-top: -0.375rem;
 }
 /*# sourceMappingURL=styles.css.map */
