@@ -3,7 +3,8 @@ userInput = wrapper.querySelector(".user-input"),
 infoText = userInput.querySelector(".info-txt"),
 inputField = userInput.querySelector("input"),
 locationBtn = userInput.querySelector("button"),
-wIcon = document.querySelector("weather-part img"),
+wIcon = document.querySelector(".weather-part img"),
+arrowBack = wrapper.querySelector("header i");
 apikey = "6c730070ef407ce056ca8396299dad34";
 
 let api;
@@ -57,7 +58,17 @@ function weatherDetails(info){
         const {feels_like, humidity, temp} = info.main;
 
         if(id == 800){
-
+            wIcon.src = "../../Icons/clear.svg";
+        }else if(id >= 200 && id <= 232){
+            wIcon.src = "../../Icons/storm.svg";
+        }else if(id >= 600 && id <= 622){
+            wIcon.src = "../../Icons/snow.svg";
+        }else if(id >= 701 && id <= 781){
+            wIcon.src = "../../Icons/haze.svg";
+        }else if(id >= 801 && id <= 804){
+            wIcon.src = "../../Icons/cloud.svg";
+        }else if((id >= 300 && id <= 321) || (id >= 500 && id <= 531)){
+            wIcon.src = "../../Icons/rain.svg";
         }
 
         wrapper.querySelector(".temp .number").innerText = Math.floor(temp);
@@ -72,3 +83,7 @@ function weatherDetails(info){
     }
     
 }
+
+arrowBack.addEventListener("click", ()=>{
+    wrapper.classList.remove("active");
+});
