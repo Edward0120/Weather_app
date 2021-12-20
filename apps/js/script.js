@@ -73,7 +73,7 @@ function weatherDetails(info){
 
         wrapper.querySelector(".temp .number").innerText = Math.floor(temp);
         wrapper.querySelector(".weather").innerText = description;
-        wrapper.querySelector(".location span").innerText = `${city} .${country}`;
+        wrapper.querySelector(".location span").innerText = `${city}, ${country}`;
         wrapper.querySelector(".temp .number-2").innerText = Math.floor(feels_like);
         wrapper.querySelector(".humidity span").innerText = `${humidity}%`;
 
