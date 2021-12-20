@@ -28,13 +28,11 @@ body{
 
         i{
             cursor: pointer;
-            font-size: 1.875rem;
-            margin-right: 0.5rem;
+            font-size: 0rem;
         }
-
     }
+
     .user-input{
-        display: none;
         margin: 1.25rem 1.5625rem 1.875rem;
 
         .info-txt{
@@ -106,7 +104,7 @@ body{
 
     .weather-part{
         margin: 1.875rem 0 0;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -195,5 +193,22 @@ body{
             }
 
         }
+    }
+
+}
+
+.wrapper.active{
+
+    i{
+        font-size: 1.875rem;
+        margin-right: 0.3125rem;
+    }
+
+    .user-input{
+        display: none;
+    }
+
+    .weather-part{
+        display: flex;
     }
 }
