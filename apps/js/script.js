@@ -5,7 +5,7 @@ inputField = userInput.querySelector("input"),
 locationBtn = userInput.querySelector("button"),
 wIcon = document.querySelector(".weather-part img"),
 arrowBack = wrapper.querySelector("header i");
-apikey = "6c730070ef407ce056ca8396299dad34";
+apikey = "";
 
 let api;
 
